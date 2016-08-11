@@ -321,31 +321,7 @@
     $('[data-ride="carousel"]').each(function () {
       var $carousel = $(this);
       Plugin.call($carousel, $carousel.data());
-      if($(this).find('.pic-cloud').length>0){
-      	//$(this).append("<div class='pic_bg'></div>");
-      	var _cloud1 = $(this).find('.cloud-1').length > 0 ? $(this).find('.cloud-1') : '';
-      	var _cloud2 = $(this).find('.cloud-2').length > 0 ? $(this).find('.cloud-2') : '';
-      	var _cloud3 = $(this).find('.cloud-3').length > 0 ? $(this).find('.cloud-3') : '';
-      	var _cloud4 = $(this).find('.cloud-4').length > 0 ? $(this).find('.cloud-4') : '';
-      	var _meadow = $(this).find('.pic-meadow').length > 0 ? $(this).find('.pic-meadow') : '';
-      	var _sliderpic = $(this).find('.sliderpic').length > 0 ? $(this).find('.sliderpic') : '';
-      	var _rainbow = $(this).find('.pic-rainbow').length > 0 ? $(this).find('.pic-rainbow') : '';
-      	setTimeout(function(){_meadow.addClass('fadeIn')},1100);
-      	setTimeout(function(){_cloud1.addClass('fadeIn')},1850);
-      	setTimeout(function(){_cloud2.addClass('fadeIn')},2600);
-      	setTimeout(function(){_sliderpic.addClass('fadeIn')},2700);
-      	setTimeout(function(){_rainbow.addClass('fadeIn')},3050);      	
-      	setTimeout(function(){_cloud4.toggleClass('fadeInLeft');setInterval(_togglec,8500);},1500);
-      	_cloud3.toggleClass('fadeInRight');
-      	var _togglec = function(){
-      		_cloud4.toggleClass('fadeInLeft').toggleClass('fadeInLeft2');
-      	}
-      	var _toggled = function(){
-      		_cloud3.toggleClass('fadeInRight').toggleClass('fadeInRight2');
-      	}
-      	
-      	setInterval(_toggled,8500);
-      }
+      
     })
   })
 
