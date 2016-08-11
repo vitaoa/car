@@ -322,7 +322,7 @@
       var $carousel = $(this);
       Plugin.call($carousel, $carousel.data());
       if($(this).find('.pic-cloud').length>0){
-      	$(this).append("<div class='pic_bg'></div>");
+      	//$(this).append("<div class='pic_bg'></div>");
       	var _cloud1 = $(this).find('.cloud-1').length > 0 ? $(this).find('.cloud-1') : '';
       	var _cloud2 = $(this).find('.cloud-2').length > 0 ? $(this).find('.cloud-2') : '';
       	var _cloud3 = $(this).find('.cloud-3').length > 0 ? $(this).find('.cloud-3') : '';
