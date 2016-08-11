@@ -113,7 +113,7 @@
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background: url(../img/pic-1.jpg) no-repeat center bottom;
+	background:#358E4C url(../img/pic-1.jpg) no-repeat center bottom;
 }
 
 .carousel-inner> .item {
