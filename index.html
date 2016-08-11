@@ -156,7 +156,6 @@
 					</div>
 					<script type="text/javascript">
 					window.onload = function(){
-						console.log('loaded');return;
       	var _this = $('.carousel');
       	var _cloud1 = _this.find('.cloud-1').length > 0 ? _this.find('.cloud-1') : '';
       	var _cloud2 = _this.find('.cloud-2').length > 0 ? _this.find('.cloud-2') : '';
@@ -165,10 +164,10 @@
       	var _meadow = _this.find('.pic-meadow').length > 0 ? _this.find('.pic-meadow') : '';
       	var _sliderpic = _this.find('.sliderpic').length > 0 ? _this.find('.sliderpic') : '';
       	var _rainbow = _this.find('.pic-rainbow').length > 0 ? _this.find('.pic-rainbow') : '';
-      	setTimeout(function(){_meadow.addClass('fadeIn')},1100);
-      	setTimeout(function(){_cloud1.addClass('fadeIn')},1850);
-      	setTimeout(function(){_cloud2.addClass('fadeIn')},2600);
-      	setTimeout(function(){_sliderpic.addClass('fadeIn')},2700);
+      	setTimeout(function(){_meadow.addClass('bounceInUp fadeIn')},1100);
+      	setTimeout(function(){_cloud1.addClass('fadeInDown fadeIn')},1850);
+      	setTimeout(function(){_cloud2.addClass('bounceInDown fadeIn')},2600);
+      	setTimeout(function(){_sliderpic.addClass('bounceInDown fadeIn')},2700);
       	setTimeout(function(){_rainbow.addClass('fadeIn')},3050);      	
       	setTimeout(function(){_cloud4.toggleClass('fadeInLeft');setInterval(_togglec,8500);},1500);
       	_cloud3.toggleClass('fadeInRight');
