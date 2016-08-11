@@ -156,8 +156,7 @@
 					</div>
 					<script type="text/javascript">
 					window.onload = function(){
-						console.log('loaded');
-					if($('.carousel').find('.pic-cloud').length>0){
+						console.log('loaded');return;
       	var _this = $('.carousel');
       	var _cloud1 = _this.find('.cloud-1').length > 0 ? _this.find('.cloud-1') : '';
       	var _cloud2 = _this.find('.cloud-2').length > 0 ? _this.find('.cloud-2') : '';
@@ -182,7 +181,6 @@
       	
       	setInterval(_toggled,8500);
       }
-					}
 						$('.search-box .input-group .icon-date').click(function(){
 							$(this).next('.i-text').focus();
 						});
